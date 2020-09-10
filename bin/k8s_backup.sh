@@ -16,7 +16,8 @@ LOG_OUTPUT_FILE_DEFAULT="${LOG_PATH}/backup.log"
 . ${BACKUP_PATH}/bin/logger.sh
 
 ## set K8s type
-_config_type_list=$(kubectl api-resources | grep -v "events" | awk '{print $1}' | sort)
+# _config_type_list=$(kubectl api-resources | grep -v "events" | awk '{print $1}' | sort)
+_config_type_list=$(cat resource-list.txt | grep -v '#')
 
 ## make dir
 mkdir -p ${BACKUP_PATH_BIN}

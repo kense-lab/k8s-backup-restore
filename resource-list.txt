@@ -1,0 +1,24 @@
+configmaps
+cronjobs
+daemonsets
+deployments
+ingresses
+jobs
+limitranges
+poddisruptionbudgets
+podsecuritypolicies
+priorityclasses
+replicationcontrollers
+secrets
+services
+statefulsets
+storageclasses
+persistentvolumeclaims
+# nodes
+# namespaces
+# persistentvolumes
+# replicasets
+# endpoints
+# pods
+# rolebindings
+# roles
